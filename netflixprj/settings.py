@@ -59,7 +59,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 ROOT_URLCONF = 'netflixprj.urls'
 
 TEMPLATES = [
@@ -142,13 +141,6 @@ SITE_ID = 1
 AUTH_USER_MODEL = 'netflixapp.CustomUser'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'    
-
-# Extra places for collectstatic to find static files.
-#STATICFILES_DIRS = [
-#    os.path.join(PROJECT_ROOT, 'static'),
-#]
-#STATIC_URL = '/static/'
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
