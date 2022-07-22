@@ -1,2 +1,2 @@
 web: gunicorn netflixprj.wsgi --log-file -
-python manage.py collectstatic
+web: python manage.py collectstatic --no-input
