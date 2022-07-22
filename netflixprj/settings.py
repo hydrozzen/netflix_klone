@@ -26,7 +26,8 @@ SECRET_KEY = 'f!7dlcf!rs7ee+hs8be!2n3q*k$)9y*s16srr^oa4iwk!e*!8+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.netflixprj.herokuapp.com',
+                '127.0.0.1']
 
 
 # Application definition
