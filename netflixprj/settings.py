@@ -141,7 +141,7 @@ AUTHENTICATION_BACKENDS = [
 SITE_ID = 1
 
 AUTH_USER_MODEL = 'netflixapp.CustomUser'
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'    
 
 # Extra places for collectstatic to find static files.
