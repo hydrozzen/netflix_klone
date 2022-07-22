@@ -1,1 +1,2 @@
-web: gunicorn netflixprj.wsgi --log-file - --log-level debug
+web: gunicorn netflixprj.wsgi --log-file -
+python manage.py collectstatic
