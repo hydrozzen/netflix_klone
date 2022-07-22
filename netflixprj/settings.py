@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import django_heroku
-django_heroku.settings(locals())
+
 from pathlib import Path
 import os
 
@@ -145,9 +145,9 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'    
 
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, 'static'),
-]
+#STATICFILES_DIRS = [
+#    os.path.join(PROJECT_ROOT, 'static'),
+#]
 #STATIC_URL = '/static/'
 #STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
@@ -162,4 +162,4 @@ ACCOUNT_EMAIL_VERIFICATION='none'
 ACCOUNT_USERNAME_REQUIRED=False
 
 
-
+django_heroku.settings(locals())
